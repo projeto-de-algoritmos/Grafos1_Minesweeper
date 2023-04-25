@@ -39,21 +39,27 @@
         font-size: 20px; /* Tamanho da fonte */
         margin: 4px 2px; /* Margem */
         cursor: pointer; /* Cursor de ponteiro */
-        margin-top: 50px;
+        margin-top: 10px; /* espaçamento da margem */
 
       }
-
-      
       /* Estilos para o botão quando o mouse estiver sobre ele */
       button:hover {
-        background-color:  #FF0000; /* Nova cor de fundo */
+        background-color:  	#FFA500; /* Nova cor de fundo */
       }
 </style>
 <body>
-    <h1>------------ NEW GAME ----------------         </h1>
-    <button class="button">INICIANTE</button>
-    <button class="button1">INTERMEDIARIO</button>
-    <button class="button2">DÍFICIL</button>
+    <h1>------------ NOVO JOGO ----------------         </h1>
+    <div id="options" style="margin: 0 auto; display: block; text-align: 'left';" >
+		<form id="nivel" style = "color: white; font-size: 25px;">
+			<input type="radio" name="nivel" value="iniciante"> Iniciante<br>
+			<input type="radio" name="nivel" value="intermediario"> Intermediário<br>
+			<input type="radio" name="nivel" value="experiente"> Experiente
+		  </form>
+		<br/>
+		<button id="start" onclick="start(event);">
+			Iniciar
+		</button>
+	</div>
 </body>
 
 </html>
