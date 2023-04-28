@@ -78,7 +78,7 @@ function flag(event) {
     event.preventDefault();
 
     const { target } = event;
-    target.innerHTML = '<img src=\"./assets/flag.png\"></img>';
+    target.innerHTML = '<img src=\"./image/flag.png\"></img>';
     target.className = 'box';
 
     return false;
