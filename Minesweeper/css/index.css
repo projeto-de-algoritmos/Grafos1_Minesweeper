@@ -1,0 +1,25 @@
+  /* Estilos para o campo minado - Matriz */
+  body {
+    align-items: center;
+    margin-top:300px;
+  } 
+  .box {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 24 px;
+    text-align: center; 
+  }
+  #field {
+    width: 300px;
+    flex-wrap: wrap;
+     margin-top:300px;
+  }
+  .zero {
+    opacity: .8;
+  }
+  

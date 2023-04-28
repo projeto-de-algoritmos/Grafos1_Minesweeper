@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang = "pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>MINESWEEPER</title>
+    <script src="js/index.js"></script>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:0;
-
-    }
+      /* Estilos para o título */
     h1 {
 			font-family: Arial, sans-serif;
 			font-size: 36px;
 			color: white;
 			font-weight: bold;
 			text-transform: uppercase;
-			margin-top:300px;
+			margin-top:200px;
+      text-align: center;
+      margin:50;
 		}
+    /* Estilos para o página */
     body {
         width:100%;
         height:100%;
@@ -27,7 +27,7 @@
         background-repeat: no-repeat;   
 
     }
-          /* Estilos para o botão */
+    /* Estilos para o botão */
      button {
         background-color: #FFFFFF; /* Cor de fundo */
         border: none; /* Sem borda */
@@ -35,31 +35,56 @@
         padding: 15px 32px; /* Espaçamento interno */
         text-align: center; /* Alinhamento de texto */
         text-decoration: none; /* Sem decoração de texto */
-        display: inline-block; /* Display inline */
         font-size: 20px; /* Tamanho da fonte */
-        margin: 4px 2px; /* Margem */
+        margin: 10px 720px; /* Margem */
         cursor: pointer; /* Cursor de ponteiro */
-        margin-top: 10px; /* espaçamento da margem */
 
       }
       /* Estilos para o botão quando o mouse estiver sobre ele */
       button:hover {
         background-color:  	#FFA500; /* Nova cor de fundo */
       }
+      /* Estilos para menu de opções */
+      op {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      text-align: 'center';
+      margin: 0 auto; 
+      display: block; 
+     }
+     /* Estilos para menu de opções */
+     form {
+      text-align: center;
+      color: white; 
+      font-size: 25px; 
+      margin-top:300px;
+     }
+     /* Dimensionamento da matriz */
+     table {
+      margin: 0 auto;
+     }
+
+    
 </style>
 <body>
-    <h1>------------ NOVO JOGO ----------------         </h1>
-    <div id="options" style="margin: 0 auto; display: block; text-align: 'left';" >
-		<form id="nivel" style = "color: white; font-size: 25px;">
-			<input type="radio" name="nivel" value="iniciante"> Iniciante<br>
-			<input type="radio" name="nivel" value="intermediario"> Intermediário<br>
-			<input type="radio" name="nivel" value="experiente"> Experiente
+    <h1 id="status" hidden></h1>
+    <op id="opcao" >
+		<form id="nivel">
+            <h1> - New Game - </h1>
+			<input type="radio" name="nivel" value="iniciante"> Beginner<br>
+			<input type="radio" name="nivel" value="intermediario"> Intermediary<br>
+			<input type="radio" name="nivel" value="experiente">Experient<br>
 		  </form>
 		<br/>
 		<button id="start" onclick="start(event);">
-			Iniciar
+			Start
 		</button>
-	</div>
+	</op>
+    <table>
+		<tbody id="field">
+    </tbody>
+	</table>
 </body>
 
 </html>
