@@ -157,20 +157,20 @@ const start = ({ target }) => {
 
 
   target.hidden = true;
-  document.getElementById('opcao').style.display = 'none';
-  var radios = document.getElementsByName('nivel');
+  document.getElementById('option').style.display = 'none';
+  var radios = document.getElementsByName('level');
   var numberOfBombs = 0;
   for (let i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
-        if(radios[i].value == "iniciante"){
+        if(radios[i].value == "beginner"){
           FIELD_SIZE = 4
           numberOfBombs = 2
         }
-        if(radios[i].value == "intermediario"){
+        if(radios[i].value == "intermediary"){
           FIELD_SIZE = 6
           numberOfBombs = 5
         }
-        if(radios[i].value == "experiente"){
+        if(radios[i].value == "experient"){
           FIELD_SIZE = 8
           numberOfBombs = 10
         }  
