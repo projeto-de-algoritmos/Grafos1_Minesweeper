@@ -1,5 +1,7 @@
   /* Estilos para o página */
 body {
+    font-family: Arial, sans-serif;
+    text-decoration: solid;
     align-items: center;
     margin-top:300px;
     width:100%;
@@ -43,16 +45,16 @@ body {
 
 /* Estilos para o botão */
 button {
-    background-color: #fff; /* Cor de fundo */
-    border: none; /* Sem borda */
-    color: #000; /* Cor do texto */
-    padding: 15px 32px; /* Espaçamento interno */
+    background-color: #fff; 
+    border: none;
+    color: #000; 
+    padding: 15px 32px; 
     text-align: center; /* Alinhamento de texto */
     text-decoration: none; /* Sem decoração de texto */
     font-size: 20px; /* Tamanho da fonte */
     margin: 10px 720px; /* Margem */
     cursor: pointer; /* Cursor de ponteiro */
-
+    border-radius: 15px;
   }
   /* Estilos para o botão quando o mouse estiver sobre ele */
   button:hover {
@@ -79,4 +81,6 @@ table {
   margin: 0 auto;
 }
 
-
+#reloadButton{
+  width: 10%;
+}
