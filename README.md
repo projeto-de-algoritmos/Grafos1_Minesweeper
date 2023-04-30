@@ -13,19 +13,25 @@ O jogo Minesweeper é um jogo de tabuleiro que consiste em um grid de células, 
 
 A implementação usa grafos para representar o tabuleiro do jogo, onde cada célula é um nó do grafo e as arestas são as conexões entre as células adjacentes. Essa representação é útil para a implementação do algoritmo Flood Fill, que é usado para revelar todas as células que não contêm minas e que são adjacentes a uma célula inicial.
 
+##  Como jogar
+
+1. Clone este repositório em sua máquina local.
+2. Abra o terminal e navegue até a pasta do projeto.
+3. Abra o arquivo 'index.html' em um navegador.
+4. Escolha um nível de dificuldade.
+5. Divirta-se!
+
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
 **Linguagem**: Javascript <br>
-**Framework**: React Js <br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
+O jogo pode ser personalizado alterando as seguintes variáveis em index.js:
+
+- FIELD_SIZE: o número de linhas e colunas do tabuleiro.
+- numberOfBombs: o número de minas no tabuleiro.
 
 
