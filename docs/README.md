@@ -34,7 +34,7 @@ A implementação usa grafos para representar o tabuleiro do jogo, onde cada cé
 
 O jogo pode ser personalizado alterando as seguintes variáveis em index.js:
 
-- FIELD_SIZE: o número de linhas e colunas do tabuleiro.
+- fieldSize: o número de linhas e colunas do tabuleiro.
 - numberOfBombs: o número de minas no tabuleiro.
 
 
