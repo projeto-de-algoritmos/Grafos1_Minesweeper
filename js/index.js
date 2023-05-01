@@ -39,7 +39,6 @@ const start = ({ target }) => {
     for (let j = 0; j < fieldSize; j++) {
       const cell = document.createElement('td');
       cell.onclick = () => floodFill(i, j, matrix);
-      cell.oncontextmenu = (event) => flag(event);
       cell.setAttribute('id', `${ i }${ j }`);
       cell.setAttribute('value', matrix[i][j]);
       cell.className = 'box';
@@ -111,20 +110,6 @@ const floodFill = (i, j, matrix) => {
   }
 };
 
-
-function flag(event) {
-    if (gameEnd) {
-        return;
-    }
-
-    event.preventDefault();
-
-    const { target } = event;
-    target.innerHTML = '<img src=\"./image/flag.png\"></img>';
-    target.className = 'box';
-
-    return false;
-}
 
 const onClick = (i, j) => {
   floodFill(parseInt(i), parseInt(j));
