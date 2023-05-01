@@ -22,7 +22,10 @@ A implementação usa grafos para representar o tabuleiro do jogo, onde cada cé
 5. Divirta-se!
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![Capturar](https://user-images.githubusercontent.com/67807684/235389236-46463cb0-8dfd-4c71-ba73-c4f52114a870.JPG)
+![Capturar1](https://user-images.githubusercontent.com/67807684/235389242-1963c8c8-fda0-47b0-943a-126caee06696.JPG)
+![Capturar2](https://user-images.githubusercontent.com/67807684/235389248-ce243397-8fa5-43c4-8bd3-c4154dbb6ec2.JPG)
+
 
 ## Instalação 
 **Linguagem**: Javascript <br>
